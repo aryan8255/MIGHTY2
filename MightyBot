@@ -1,0 +1,56 @@
+
+
+_get_repolink () {
+    local regex
+    regex='(https?)://github.com/.+/.+'
+    if [[ $MIGHTY_REPO == "MIGHTYBOT" ]]
+    then
+        echo "aHR0cHM6Ly9naXRodWIuY29tL01pZ2h0eVVCL01JR0hUWS1VU0VSQk9UL2FyY2hpdmUvTWlnaHR5Qm90LnppcA==" | base64 -d
+    elif [[ $MIGHTY_REPO == "MIGHTYBOT" ]]
+    then
+        echo "aHR0cHM6Ly9naXRodWIuY29tL01pZ2h0eVVCL01JR0hUWS1VU0VSQk9UL2FyY2hpdmUvTWlnaHR5Qm90LnppcA==" | base64 -d
+    elif [[ $MIGHTY_REPO =~ $regex ]]
+    then
+        if [[ $MIGHTY_REPO_BRANCH ]]
+        then
+            echo "${MIGHTY_REPO}/archive/${MIGHTY_REPO_BRANCH}.zip"
+        else
+            echo "${MIGHTY_REPO}/archive/master.zip"
+        fi
+    else
+        echo "aHR0cHM6Ly9naXRodWIuY29tL01pZ2h0eVVCL01JR0hUWS1VU0VSQk9UL2FyY2hpdmUvTWlnaHR5Qm90LnppcA==" | base64 -d
+    fi
+}
+
+
+_setting_bot () {
+    local zippath
+    zippath="MightyBot.zip"
+    echo "Downloading Source Code..."
+    wget -q $(_get_repolink) -O "$zippath"
+    echo "Unpacking Data..."
+    MIGHTYPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
+    unzip -qq "$zippath"
+    echo "Done!"
+    echo "Cleaning..."
+    rm -rf "$zippath"
+    sleep 5
+    cd $MIGHTYPATH
+    echo "⚡Starting... MightyUserbot⚡"
+    echo "
+    
+.##.....##.####..######...##.....##.########.##....##
+.###...###..##..##....##..##.....##....##.....##..##.
+.####.####..##..##........##.....##....##......####..
+.##.###.##..##..##...####.#########....##.......##...
+.##.....##..##..##....##..##.....##....##.......##...
+.##.....##..##..##....##..##.....##....##.......##...
+.##.....##.####..######...##.....##....##.......##...
+
+"
+
+    python3 ../setup/updater.py ../requirements.txt requirements.txt
+    python3 -m userbot
+}
+
+_setting_bot
