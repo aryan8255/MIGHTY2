@@ -30,17 +30,17 @@
     },
     "APP_ID": {
       "description": "Get this value from my.telegram.org! or @MightyApiHashBot | Putting Others Value may result In Account Ban.",
-      "value": ""
+      "value": "",
       "required" :true
     },
     "API_HASH": {
       "description": "Get this value from my.telegram.org! or @MightyApiHashBot | Putting Others Value May result In Account Ban.",
-      "value": ""
+      "value": "",
       "required" :true
     },
     "MIGHTY_STRING": {
       "description": "String is a Sensitive Data, Don't Share it With Anyone! | Currently Repl Have Some issues, So Get this value from @MightySsGenBot.",
-      "value": ""
+      "value": "",
       "required" :true
     },
     "BOT_TOKEN": {
