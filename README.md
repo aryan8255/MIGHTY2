@@ -13,11 +13,11 @@
 </h6>
 <p align="center">
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FMightyUB%2FMIGHTY-USERBOT&count_bg=%2375DA28&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Hits&edge_flat=false"/></a>
-<a href="https://github.com/MightyUB/MIGHTY-USERBOT" alt="GitHub Closed Issues"> <img src="https://img.shields.io/github/issues-closed-raw/MightyUB/MIGHTY-USERBOT?style=flat&logo=github&color=success" /> </a>
+<a href="https://github.com/MightyUB/MIGHTY-USERBOT/issues?q=is%3Aissue+is%3Aclosed" alt="GitHub Closed Issues"> <img src="https://img.shields.io/github/issues-closed-raw/MightyUB/MIGHTY-USERBOT?style=flat&logo=github&color=success" /> </a>
 <a href="https://github.com/MightyUB/MIGHTY-USERBOT/graphs/contributors" alt="GitHub Contributors"> <img src="https://img.shields.io/github/contributors/MightyUB/MIGHTY-USERBOT?style=flat&logo=github" /> </a>
 <a href="https://github.com/MightyUB/MIGHTY-USERBOT/network/members" alt="GitHub Forks"> <img src="https://img.shields.io/github/forks/MightyUB/MIGHTY-USERBOT?label=Forks&logo=github" /> </a>
 <a href="https://github.com/MightyUB/MIGHTY-USERBOT" alt="GitHub Closed Pull Requests"> <img src="https://img.shields.io/github/issues-pr-closed-raw/MightyUB/MIGHTY-USERBOT?color=success" /> </a>
-<a href="https://github.com/MightyUB/MIGHTY-USERBOT" alt="GitHub Issues"> <img src="https://img.shields.io/github/issues-raw/MightyUB/MIGHTY-USERBOT?style=flat&logo=github&color=yellow" /> </a>
+<a href="https://github.com/MightyUB/MIGHTY-USERBOT/issues" alt="GitHub Issues"> <img src="https://img.shields.io/github/issues-raw/MightyUB/MIGHTY-USERBOT?style=flat&logo=github&color=yellow" /> </a>
 </p>
 <p align="center">
 <a href="https://www.python.org/" alt="Made-With-Python"> <img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=flat&logo=python&color=blue" /> </a>
